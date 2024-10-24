@@ -25,9 +25,7 @@ function Leftsidebar() {
                 <ul className="nav flex-column sub-menu">
                 <li className="nav-item">
                     {" "}
-                    <a className="nav-link" href="pages/ui-features/buttons.html">
-                    User Request Form
-                    </a>
+                    <Link to="/ItemRequest" className="nav-link">Raise Item request</Link>
                 </li>
                 </ul>
             </div>

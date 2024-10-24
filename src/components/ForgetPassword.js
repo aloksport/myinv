@@ -1,5 +1,5 @@
 import {  Link } from "react-router-dom";
-function Login() {
+function ForgetPassword() {
     return (
         <div className="container-scroller">
         <div className="container-fluid page-body-wrapper full-page-wrapper">
@@ -10,23 +10,15 @@ function Login() {
                   <div className="brand-logo">
                     <img src="images/logo.png" alt="logo" />
                   </div>
-                  <h4>Hello! let's get started</h4>
-                  <h6 className="font-weight-light">Sign in to continue.</h6>
+                  <h4>Forget Password</h4>
+                  <h6 className="font-weight-light">Please enter your email address.</h6>
                   <form className="pt-3">
                     <div className="form-group">
                       <input
                         type="email"
                         className="form-control form-control-lg"
                         id="exampleInputEmail1"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div className="form-group">
-                      <input
-                        type="password"
-                        className="form-control form-control-lg"
-                        id="exampleInputPassword1"
-                        placeholder="Password"
+                        placeholder="Email address"
                       />
                     </div>
                     <div className="mt-3">
@@ -34,23 +26,22 @@ function Login() {
                         className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
                         href="../../index.html"
                       >
-                        SIGN IN
+                        Reset Password
                       </a>
                     </div>
-                    <div className="my-2 d-flex justify-content-between align-items-center">
-                      <Link to="/ForgetPassword" className="auth-link text-black">Forgot password?</Link>
-                    </div>
                     <div className="text-center mt-4 font-weight-light">
-                      <Link to="/Register" className="text-primary">Create Account</Link>
+                      <Link to="/Login" className="text-primary">Login</Link>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
           </div>
+          {/* content-wrapper ends */}
         </div>
+        {/* page-body-wrapper ends */}
       </div>
       );
 }
 
-export default Login;
+export default ForgetPassword;

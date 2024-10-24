@@ -1,16 +1,14 @@
-import   Navbar  from "./Navbar";
-import Leftsidebar from "./Leftsidebar";
-import Mainpanel from "./Mainpanel";
+import   ItemRequest  from "./ItemRequest";
+import UserRequestData from "./UserRequestData";
+import DashboardTopCard from "./DashboardTopCard";
+import UserWelcomeMessage from "./UserWelcomeMessage";
 function Dashboard() {
+    const isAdmin = 1;
     return (
-        <div className="container-scroller">
-            <Navbar/>
-            <div class="container-fluid page-body-wrapper">
-                <Leftsidebar/>
-                <Mainpanel/>
-            </div>
-
-        </div>
+        <>
+        <UserWelcomeMessage/>
+        {isAdmin ? <><DashboardTopCard/><UserRequestData/></> : <ItemRequest/>}
+        </>        
     );
 }
 

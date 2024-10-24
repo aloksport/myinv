@@ -8,7 +8,7 @@ function Navbar(){
                 <img src="images/logo.png" className="mr-2" alt="logo" />
             </Link>
             <Link to="/Dashboard" className="navbar-brand brand-logo-mini">
-                <img src="images/logo.png" alt="logo" />
+                <img src="images/android-chrome-192x192.png" alt="logo" />
             </Link>
             </div>
             <div className="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -22,26 +22,19 @@ function Navbar(){
 
             <ul className="navbar-nav navbar-nav-right">
                 <li className="nav-item nav-profile dropdown">
-                <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    data-toggle="dropdown"
-                    id="profileDropdown"
-                >
-                    <img src="images/faces/face28.jpg" alt="profile" />
-                </a>
+                <Link to="#" className="nav-link dropdown-toggle" data-toggle="dropdown" id="profileDropdown">
+                    <img src="images/faces/noimg.jpg" alt="profile" />
+                </Link>
                 <div
                     className="dropdown-menu dropdown-menu-right navbar-dropdown"
                     aria-labelledby="profileDropdown"
                 >
-                    <a className="dropdown-item">
-                    <i className="ti-settings text-primary" />
-                    Settings
-                    </a>
-                    <a className="dropdown-item">
-                    <i className="ti-power-off text-primary" />
-                    Logout
-                    </a>
+                <Link to="/Profile" className="dropdown-item" >
+                    <i className="ti-settings text-primary" /> Settings
+                </Link>
+                <Link to="/Login" className="dropdown-item" >
+                    <i className="ti-power-off text-primary" /> Logout
+                </Link>
                 </div>
                 </li>
             </ul>
